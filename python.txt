@@ -1,0 +1,81 @@
+node id = 43 --> look at the dest_node_number
+
+comparing two same colums from two different dataframes
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Example data, replace with your actual DataFrames and column names
+data1 = {'x1': [1, 2, 3, 4, 5], 'y1': [10, 12, 8, 7, 5]}
+data2 = {'x2': [1, 2, 3, 4, 5], 'y2': [5, 8, 6, 9, 12]}
+comparison_data = [7, 9, 5, 8, 10]  # Example comparison data
+
+df1 = pd.DataFrame(data1)
+df2 = pd.DataFrame(data2)
+
+plt.figure(figsize=(10, 6))  # Optional: Set the figure size
+
+# Plot the data from df1
+plt.plot(df1['x1'], df1['y1'], label='DataFrame 1')
+
+# Plot the data from df2
+plt.plot(df2['x2'], df2['y2'], label='DataFrame 2')
+
+# Plot the comparison data on the same y-axis
+plt.plot(df1['x1'], comparison_data, label='Comparison Data', linestyle='dashed')
+
+# Add labels and title
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Comparison of Two Columns from Two DataFrames')
+
+# Add a legend
+plt.legend()
+
+# Show the plot
+plt.show()
+---------------------------------------------------------------------------------
+a forwarding attack means and email sent by a computer to unauthorized third party what does connect with node_id and another column
+that may cause the problem
+So, "Port number of the source sensor node" could mean the specific port number that the sensor node is using to communicate data. 
+This port number would be used to route incoming data to the correct sensor application or process running on the sensor node.
+--------------------------------------------------------------------
+code for plots 22222222222
+
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Example DataFrame, replace with your actual DataFrame
+data = {
+    'hop_count': [1, 2, 3, 4, 5, 1, 2, 3, 4, 5],
+    'rest_energy': [100, 90, 85, 80, 70, 95, 88, 82, 75, 70],
+    'type_of_attack': ['A', 'A', 'A', 'A', 'A', 'B', 'B', 'B', 'B', 'B']
+}
+
+df = pd.DataFrame(data)
+
+plt.figure(figsize=(10, 6))  # Optional: Set the figure size
+
+# Separate data based on type_of_attack
+attack_A = df[df['type_of_attack'] == 'A']
+attack_B = df[df['type_of_attack'] == 'B']
+
+# Plot line for type_of_attack 'A'
+plt.plot(attack_A['hop_count'], attack_A['rest_energy'], marker='o', label='Attack A')
+
+# Plot line for type_of_attack 'B'
+plt.plot(attack_B['hop_count'], attack_B['rest_energy'], marker='s', label='Attack B')
+
+# Add labels and title
+plt.xlabel('Hop Count')
+plt.ylabel('Rest Energy')
+plt.title('Rest Energy vs. Hop Count with Attack Types')
+
+# Add a legend
+plt.legend()
+
+# Show the plot
+plt.grid(True)
+plt.show()
+-------------------------
+behviuor, type, event, sensir node id 
